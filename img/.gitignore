@@ -1,0 +1,8 @@
+# ignore mac system files
+.DS_store
+
+# ignore node_modules folder
+node_modules
+
+# ignore all txt files
+*.txt
