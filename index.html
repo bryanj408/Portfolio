@@ -18,9 +18,10 @@
 	<title>Bryan Arndt</title>
     <!--future css link here-->
   </head>
-  <body>
 
-		<nav class="navbar bg-dark navbar-dark navbar-expand-sm sticky-top">
+  <body data-bs-spy="scroll">
+
+		<nav class="navbar navbar-expand-sm sticky-top">
 			<div class="container">
 				<a class="navbar-brand" href="#">BA</a>
 				<button class="navbar-toggler" type="button" data-bs-toggle="offcanvas" data-bs-target="#offcanvasDarkNavbar" aria-controls="offcanvasDarkNavbar" aria-label="Toggle NAvigation">
@@ -34,8 +35,8 @@
 					</div>
 					<div class="offcanvas-body">
 						<div class="navbar-nav justify-content-end flex-grow-1 pe-1"><!--ms-auto me-3-->
-							<a class="nav-item nav-link" href="#">Home</a>
-							<a class="nav-item nav-link" href="#">Projects And Services</a>
+							<a class="nav-item nav-link active" aria-current="page" href="#">Home</a>
+							<a class="nav-item nav-link" href="#projects">Projects And Services</a>
 							<a class="nav-item nav-link" href="#">About Me</a>
 							<a class="nav-item nav-link" href="#">Connect</a>
 						</div><!--navbar-nav-->
@@ -44,71 +45,125 @@
 			</div>
 		</nav>
 			
-
-
-
 		<header>
-			<div class="position-relative">
-				<img src="./img/bryan.jpeg" id="bryan" class="rounded-circle position-absolute top-50 start-50 translate-middle"
-					alt="Photo of Bryan Arndt" style="height: 200px; width: 200px;" aria-labelledby="photoofbryan"> 
-
-				<!-- <h5 class="text-white text-align-end position-absolute top-50 start-50 translate-middle text-uppercase" style="" id="welcome-message">Welcome! I'm Bryan</h5> -->
-				<img src="./img/flowers.jpg" style="height: 60vh; width: 100vw;" alt="Beach Background">
-			</div>
+			<img src="./img/background1.jpg" id="background1" alt="Beach Background">
 		</header>
+
+      <section class="d-flex justify-content-center mt-5">
+         <img src="./img/bryan.jpeg" id="bryan" class="rounded-circle" alt="Photo of Bryan Arndt" 
+         style="height: 200px; width: 200px;" aria-labelledby="photoofbryan"> 
+      </section><!--About me-->
+
+      <div class="container">
+         <h3 class="text-center mt-3 text-uppercase" id="aboutMe">Hi, I'm Bryan</h3>
+         <p class="mt-3">I am a front-end developer with... My background in manual quality assurance has given me 
+            the experience of working with devleopers. I am a front-end developer with... My background in manual quality assurance has given me 
+            the experience of working with devleopers.I am a front-end developer with... My background in manual quality assurance has given me 
+            the experience of working with devleopers.I am a front-end developer with... My background in manual quality assurance has given me 
+            the experience of working with devleopers.I am a front-end developer with... My background in manual quality assurance has given me 
+            the experience of working with devleopers.I am a front-end developer with... My background in manual quality assurance has given me 
+            the experience of working with devleopers.I am a front-end developer with... My background in manual quality assurance has given me 
+            the experience of working with devleopers.I am a front-end developer with... My background in manual quality assurance has given me 
+            the experience of working with devleopers.I am a front-end developer with... My background in manual quality assurance has given me 
+            the experience of working with devleopers.I am a front-end developer with... My background in manual quality assurance has given me 
+            the experience of working with devleopers
+         </p>
+      </div>
+      
+      
+
 
 		<h2 class="text-center mt-5 text-uppercase" id="portfolio-title">Portfolio</h2>
 
-		<section id="projects">
+		<section class="container" id="projects">
 
-			<div class="row row-cols-3 justify-content-center">
-				<div class="card d-flex" style="width: 18rem;">
-					<img src="./img/card.avif" class="card-img-top" alt="Example">
-					<div class="card-body">
-						<h5 class="card-title">Card Title</h5>
-						<p class="card-text">Some Text as a quick example to build on this card. 
-							A good placeholder for later ocntent</p>
-						<a href="#" class="btn btn-primary" role="button">Go Somewhere</a>
+			<div class="row justify-content-center">
+
+				<div class="col-12 col-sm-6 col-md-4 gx-5 gy-4 card p-0">
+					<img src="./img/card.avif" class="card-img-bottom" alt="Example">
+					<div class="card-img-overlay">
+						<a href="#" class="stretched-link" role="button"></a>
 					</div>
 				</div>
-
-				<div class="card d-flex" style="width: 18rem;">
-					<img src="./img/card.avif" class="card-img-top" alt="Example">
-					<div class="card-body">
-						<h5 class="card-title">Card Title</h5>
-						<p class="card-text">Some Text as a quick example to build on this card. 
-							A good placeholder for later ocntent</p>
-						<a href="#" class="btn btn-primary" role="button">Go Somewhere</a>
-					</div>
-				</div>
-
-				<div class="card" style="width: 18rem;">
-					<img src="./img/card.avif" class="card-img-top" alt="Example">
-					<div class="card-body">
-						<h5 class="card-title">Card Title</h5>
-						<p class="card-text">Some Text as a quick example to build on this card. 
-							A good placeholder for later ocntent</p>
-						<a href="#" class="btn btn-primary" role="button">Go Somewhere</a>
-					</div>
-				</div>
-
-				<div class="card" style="width: 18rem;">
-					<img src="./img/card.avif" class="card-img-top" alt="Example">
-					<div class="card-body">
-						<h5 class="card-title">Card Title</h5>
-						<p class="card-text">Some Text as a quick example to build on this card. 
-							A good placeholder for later ocntent</p>
-						<a href="#" class="btn btn-primary" role="button">Go Somewhere</a>
-					</div>
-				</div>
-			</div>
-				
 			
-		</section>
+				<div class="col-12 col-sm-6 col-md-4 gx-5 gy-4 card p-0">
+					<img src="./img/card.avif" class="card-img-bottom" alt="Example">
+					<div class="card-img-overlay">
+						<a href="#" class="stretched-link" role="button"></a>
+					</div>
+				</div>
+				
+				<div class="col-12 col-sm-6 col-md-4 gx-5 gy-4 card p-0">
+					<img src="./img/card.avif" class="card-img-bottom" alt="Example">
+					<div class="card-img-overlay">
+						<a href="#" class="stretched-link" role="button"></a>
+					</div>
+				</div>
 
+				<div class="col-12 col-sm-6 col-md-4 gx-5 gy-4 card p-0">
+					<img src="./img/card.avif" class="card-img-bottom" alt="Example">
+					<div class="card-img-overlay">
+						<a href="#" class="stretched-link" role="button"></a>
+					</div>
+				</div>
+
+				<div class="col-12 col-sm-6 col-md-4 gx-5 gy-4 card p-0">
+					<img src="./img/card.avif" class="card-img-bottom" alt="Example">
+					<div class="card-img-overlay">
+						<a href="#" class="stretched-link" role="button"></a>
+					</div>
+				</div>
+				<div class="col-12 col-sm-6 col-md-4 gx-5 gy-4 card p-0">
+					<img src="./img/card.avif" class="card-img-bottom" alt="Example">
+					<div class="card-img-overlay">
+						<a href="#" class="stretched-link" role="button"></a>
+					</div>
+				</div>
+				
 	
+		</section><!--projects section-->
+
+		<section class="container">
+
+			<div class="row row-cols-8 justify-content-center">
+			<form class="needs-validation" novalidate>
+
+					<div class="mt-5">
+						<label for="name" class="form-label"></label>
+						<input type="name" required class="form-control" id="name" aria-describedby="name" placeholder="Name...">
+						<div class="valid-feedback">
+							Name Accepted
+						</div>
+						<div class="invalid-feedback">
+							Is that a real name?
+						</div>
+					</div>
+
+					<div>
+						<label for="email" class="form-label"></label>
+						<input type="email" required class="form-control" id="email" aria-describedby="email" placeholder="Email...">		
+					
+						<div class="valid-feedback">
+							Email Accepted
+						</div>
+						<div class="invalid-feedback">
+							Is that a real email?
+						</div>
+					</div>
+
+					<div class="mb-3">
+						<label for="message" class="form-label"></label>
+						<textarea class="form-control" id="message" rows="3" placeholder="Message..."></textarea>
+					</div>		
+				<button type="submit" class="btn btn-secondary btn-sm mb-3">Button</button>
+			</form>
+         </div><!--row-->
+			
+	
+		</section><!--form section-->
 
     <script src="https://code.jquery.com/jquery-3.7.1.js" integrity="sha256-eKhayi8LEQwp4NKxN+CfCh+3qOVUtJn3QNZ0TciWLP4=" crossorigin="anonymous"></script>
     <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/js/bootstrap.bundle.min.js" integrity="sha384-C6RzsynM9kWDrMNeT87bh95OGNyZPhcTNXj1NW7RuBCsyN/o0jlpcV8Qyq46cDfL" crossorigin="anonymous"></script>
+	 <script src="./js/scripts.js"></script>
   </body>
-</html>
+</html>	
