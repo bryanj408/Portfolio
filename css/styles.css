@@ -1,8 +1,18 @@
-/* :root {
-    --bs-body-font-family: 'Kanit', sans-serif;
-} */
+:root {
+    --bs-body-font-family: 'Archivo', sans-serif;
+    /* --bs-body-color: #808080; */
+    /* --bs-font-color: #000; */
+}
+body {
+    overflow-x: hidden;
+}
 
-#background1 {
+#bryan {
+    height: 200px;
+    width: 200px;
+}
+
+#mountain-background {
     height: 100vh;
     width: 100vw;
     /* filter: brightness(0.8); */
@@ -10,9 +20,70 @@
     background-position: center;
     background-repeat: no-repeat;
     background-size: cover;
-    position: absolute;
+    /* position: absolute; */
     top: 0;
     left: 0;
+    z-index: -1;
 }
 
- 
+#golden-gate-background {
+    height: 100vh;
+    width: 100vw;
+    z-index: -1;
+}
+
+.social-media {
+    display: flex;
+    flex-direction: row-reverse;
+}
+
+.github-icon {
+    height: 30px;
+    width: 30px;
+    margin: 15px;
+}
+
+.github-icon:hover {
+    opacity: 75%;
+    transition: .25s ease;
+    transform: scale(1.05);
+    cursor: pointer;
+}
+
+.linkedin-icon {
+    height: 30px;
+    width: 30px;
+    margin: 15px;
+}
+
+.linkedin-icon:hover {
+    opacity: 75%;
+    transition: .25s ease;
+    transform: scale(1.05);
+    cursor: pointer;
+}
+
+.navbar-brand:hover,
+#navitem-one:hover,
+#navitem-two:hover,
+#navitem-three:hover,
+#navitem-four:hover {
+    cursor: pointer;
+    animation-duration: .25s;
+    animation-name: color-change;
+    animation-iteration-count: infinite;
+    animation-direction: alternate;
+    animation-timing-function: linear;
+}
+
+@keyframes color-change {
+    0% {
+        color: #edc655;
+    }
+    50% {
+        color: #fcffad;
+    }
+    100% {
+        color: #f76414;
+    }
+}
